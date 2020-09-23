@@ -1,0 +1,144 @@
+VERSION 5.00
+Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "Comdlg32.ocx"
+Begin VB.Form frmEditTrigger 
+   BorderStyle     =   4  'Fixed ToolWindow
+   Caption         =   "Edit Trigger"
+   ClientHeight    =   2865
+   ClientLeft      =   45
+   ClientTop       =   285
+   ClientWidth     =   4590
+   LinkTopic       =   "Form1"
+   MaxButton       =   0   'False
+   MinButton       =   0   'False
+   ScaleHeight     =   2865
+   ScaleWidth      =   4590
+   ShowInTaskbar   =   0   'False
+   StartUpPosition =   3  'Windows Default
+   Begin MSComDlg.CommonDialog dlgSound 
+      Left            =   3840
+      Top             =   1440
+      _ExtentX        =   847
+      _ExtentY        =   847
+      _Version        =   393216
+      DialogTitle     =   "Choose sound file"
+      Filter          =   "*.mpg;*.wav;*.mid;*.mpe"
+      InitDir         =   "\"
+   End
+   Begin VB.CommandButton butSoundPicker 
+      Caption         =   "..."
+      Height          =   255
+      Left            =   2880
+      TabIndex        =   7
+      Top             =   1560
+      Width           =   375
+   End
+   Begin VB.TextBox txtTrigger 
+      Height          =   285
+      Left            =   120
+      TabIndex        =   0
+      Top             =   360
+      Width           =   4335
+   End
+   Begin VB.TextBox txtCommand 
+      Height          =   285
+      Left            =   120
+      TabIndex        =   1
+      Top             =   1080
+      Width           =   4335
+   End
+   Begin VB.CommandButton butCancel 
+      Caption         =   "&Close"
+      Height          =   375
+      Left            =   120
+      TabIndex        =   4
+      Top             =   2280
+      Width           =   1215
+   End
+   Begin VB.CommandButton butOK 
+      Caption         =   "&Update"
+      Default         =   -1  'True
+      Height          =   375
+      Left            =   3240
+      TabIndex        =   2
+      Top             =   2280
+      Width           =   1215
+   End
+   Begin VB.Label Label3 
+      Caption         =   "Play sound when trigger is activated"
+      Height          =   255
+      Left            =   120
+      TabIndex        =   6
+      Top             =   1560
+      Width           =   2655
+   End
+   Begin VB.Line Line1 
+      X1              =   120
+      X2              =   4440
+      Y1              =   2160
+      Y2              =   2160
+   End
+   Begin VB.Label Label1 
+      AutoSize        =   -1  'True
+      Caption         =   "Trigger text:"
+      Height          =   195
+      Left            =   120
+      TabIndex        =   5
+      Top             =   120
+      Width           =   840
+   End
+   Begin VB.Label Label2 
+      AutoSize        =   -1  'True
+      Caption         =   "Trigger command (use "";"" for multiple commands on one line):"
+      Height          =   195
+      Left            =   120
+      TabIndex        =   3
+      Top             =   840
+      Width           =   4335
+   End
+End
+Attribute VB_Name = "frmEditTrigger"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Private Sub butCancel_Click()
+
+frmEditTrigger.Hide
+
+End Sub
+
+Private Sub butOK_Click()
+
+Dim currIndex As Integer
+
+currIndex = frmTrigger.grdTrigger.Row - 1
+
+frmMain.lstTrigger.List(currIndex) = txtTrigger.Text
+frmMain.lstTriggerCommand.List(currIndex) = txtCommand.Text
+frmTrigger.PopulateGrid
+
+frmEditTrigger.Hide
+
+End Sub
+
+Private Sub butSoundPicker_Click()
+
+dlgSound.ShowOpen
+If dlgSound.FileName <> "" Then
+    txtCommand.Text = txtCommand.Text + "**PLAYSND**" + dlgSound.FileName + "+++"
+End If
+
+End Sub
+
+Private Sub Form_Load()
+
+SetPos Me
+
+End Sub
+
+Private Sub txtTrigger_GotFocus()
+
+txtTrigger.SelStart = Len(txtTrigger.Text)
+
+End Sub
+

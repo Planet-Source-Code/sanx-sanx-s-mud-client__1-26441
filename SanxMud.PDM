@@ -1,0 +1,206 @@
+[Root]
+Most Recent Package=Dep File 1
+
+
+[Package|Sanx's Mud Client|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Programming\MUD Client\Package
+
+[Package|Sanx's Mud Client|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Sanx's Mud Client|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Sanx's Mud Client|Files Found]
+
+[Package|Sanx's Mud Client|Files Released]
+
+[Package|Sanx's Mud Client|Missing Dependency Information]
+
+[Package|Sanx's Mud Client|Out-of-Date Dependency Information]
+
+[Package|Sanx's Mud Client|Files Added]
+
+[Package|Sanx's Mud Client|Files Removed]
+c:\winnt\system32\comdlg32.ocx=
+c:\winnt\system32\mscomctl.ocx=
+c:\winnt\system32\msflxgrd.ocx=
+c:\winnt\system32\mswinsck.ocx=
+c:\winnt\system32\msvbvm60.dll=
+c:\winnt\system32\oleaut32.dll=
+c:\winnt\system32\olepro32.dll=
+c:\winnt\system32\asycfilt.dll=
+c:\winnt\system32\stdole2.tlb=
+c:\program files\microsoft visual studio\vb98\wizards\pdwizard\redist\comcat.dll=
+
+[Package|Sanx's Mud Client|Files In Project]
+C:\Programming\MUD Client\SanxMud.exe=Yes
+C:\WINNT\system32\msvbvm60.dll=No
+C:\WINNT\system32\OLEAUT32.DLL=No
+C:\WINNT\system32\OLEPRO32.DLL=No
+C:\WINNT\system32\ASYCFILT.DLL=No
+C:\WINNT\system32\STDOLE2.TLB=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=No
+C:\WINNT\system32\MSCOMCTL.OCX=No
+C:\WINNT\system32\MSWINSCK.OCX=No
+C:\WINNT\system32\COMDLG32.OCX=No
+C:\WINNT\system32\MSFLXGRD.OCX=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINNT\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Sanx's Mud Client|Configure Registry Files]
+Applicable=No
+
+[Package|Sanx's Mud Client|Configure Remote Servers]
+Applicable=No
+
+[Package|Sanx's Mud Client|Install Locations]
+C:\Programming\MUD Client\SanxMud.exe=$(AppPath)
+C:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINNT\system32\MSWINSCK.OCX=$(WinSysPath)
+C:\WINNT\system32\COMDLG32.OCX=$(WinSysPath)
+C:\WINNT\system32\MSFLXGRD.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Sanx's Mud Client|Configure Shared Files]
+Applicable=Yes
+C:\Programming\MUD Client\SanxMud.exe=No
+
+[Package|Sanx's Mud Client|Distribution]
+Type=single
+Size=
+Title=Sanx's Mud Client
+
+[Package|Sanx's Mud Client|Package]
+PackageFolder=C:\Programming\MUD Client\Package
+ProjectFolder=C:\Programming\MUD Client
+ServerSideCab=
+File1=C:\Programming\MUD Client\Package\setup.exe
+File2=C:\Programming\MUD Client\Package\Setup.Lst
+File3=C:\Programming\MUD Client\Package\SanxMud.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|Sanx's Mud Client|IconGroups]
+Group0=Sanx's Mud Client
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Sanx's Mud Client|Sanx's Mud Client]
+Icon1=SanxMud.exe
+Title1=Sanx's Mud Client
+StartIn1=$(AppPath)
+Key1=Icon1
+
+
+[Package|Dep File 1|Root]
+SubWizProgID=PDWizard.DepPkgSubWiz
+BuildFolder=C:\Programming\MUD Client\Package
+
+[Package|Dep File 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Dep File 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Dep File 1|Files Found]
+
+[Package|Dep File 1|Files Released]
+
+[Package|Dep File 1|Missing Dependency Information]
+C:\Program Files\Resource Pro Kit\comdlg32.ocx=
+C:\WINNT\system32\msdxm.ocx=
+
+[Package|Dep File 1|Out-of-Date Dependency Information]
+C:\WINNT\system32\Comdlg32.ocx=
+C:\WINNT\system32\MSWINSCK.OCX=
+
+[Package|Dep File 1|Files Added]
+
+[Package|Dep File 1|Files Removed]
+
+[Package|Dep File 1|Files In Project]
+C:\WINNT\system32\msvbvm60.dll=Yes
+C:\WINNT\system32\OLEAUT32.DLL=Yes
+C:\WINNT\system32\OLEPRO32.DLL=Yes
+C:\WINNT\system32\ASYCFILT.DLL=Yes
+C:\WINNT\system32\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINNT\system32\MSCOMCTL.OCX=Yes
+C:\WINNT\system32\MSWINSCK.OCX=Yes
+C:\WINNT\system32\MSFLXGRD.OCX=Yes
+C:\Programming\MUD Client\Package\SanxMud.exe=Yes
+C:\WINNT\system32\Comdlg32.ocx=Yes
+C:\WINNT\system32\msdxm.ocx=Yes
+
+[Package|Dep File 1|Configure Registry Files]
+Applicable=No
+
+[Package|Dep File 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Dep File 1|Install Locations]
+C:\Programming\MUD Client\SanxMud.exe=$(AppPath)
+C:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINNT\system32\MSWINSCK.OCX=$(WinSysPath)
+C:\WINNT\system32\COMDLG32.OCX=$(WinSysPath)
+C:\WINNT\system32\MSFLXGRD.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Program Files\Resource Pro Kit\comdlg32.ocx=$(WinSysPath)
+C:\Programming\MUD Client\Package\SanxMud.exe=$(AppPath)
+C:\WINNT\system32\msdxm.ocx=$(WinSysPath)
+
+[Package|Dep File 1|Configure Shared Files]
+Applicable=Yes
+C:\Programming\MUD Client\SanxMud.exe=No
+
+[Package|Dep File 1|Distribution]
+Type=single
+Size=
+Title=Sanx's Mud Client
+
+[Package|Dep File 1|IconGroups]
+Group0=Sanx's Mud Client
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Dep File 1|Sanx's Mud Client]
+Icon1=SanxMud.exe
+Title1=Sanx's Mud Client
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Dep File 1|DepFile]
+DepCabFile=SanxMud.CAB
+DepCabRun=SanxMud.INF
+
+[Package|Dep File 1|Package]
+PackageFolder=C:\Programming\MUD Client\Package
+ProjectFolder=C:\Programming\MUD Client
+ServerSideCab=
+File1=C:\Programming\MUD Client\Package\SanxMud.DEP
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
